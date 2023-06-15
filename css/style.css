@@ -1,0 +1,302 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira Sans', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#header-nav {
+	background: radial-gradient(circle,#2d2d50,#11111f);
+}
+
+#header-nav li a {
+	color: #e4dde5;
+	font-size: 1em;
+}
+
+.nav-ul {
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.nav-ul li {
+	margin: 0 .5em;
+}
+
+.image-nav {
+	height: 2em;
+	margin: 0 1em;
+}
+
+.buscar-nav input {
+	width: 100%;
+	background-color: #e4dde5;
+	border: none;
+	border-radius: 12px;
+	padding: .4em .7em;
+}
+
+
+/*ESTILO DEL INICIO, PRODUCTOS*/
+
+.image-portada img {
+	width: 100%;
+	margin: 1em 0;
+}
+
+#h1-ofertas {
+	background: radial-gradient(circle,#2d2d50,#11111f);
+	color: #e4dde5;
+	padding: 10px 0 10px 30px;
+	margin-bottom: 0.5em;
+	font-style: italic;
+}
+
+.main-productos {
+	display: grid;
+	grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fill, minmax(200px, .5fr));
+	grid-gap: 3em;
+	justify-items: center;
+	align-items: center;
+	justify-content: center;
+	padding: 1em 2em 2em;
+
+}
+
+.main-productos div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;	
+	width: 100%;
+	height: 100%;
+	padding: 10px;	
+	background: linear-gradient(to bottom,#2d2d50,transparent);
+	border-radius: 12px;
+}
+
+.main-productos img {
+	border-radius: 12px;	
+	object-fit: cover;
+	width: 100%;
+	height: 90%;
+}
+
+.main-productos p {
+	padding-top: 10px;
+	font-size: 1em;
+	font-weight: 400;
+	text-align: center;	
+}
+
+
+@media (max-width: 780px) {
+
+	.main-productos {
+		grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+	 	grid-template-columns: repeat(auto-fill, minmax(150px, .6fr));		
+	}	
+
+	.main-productos p {
+		font-size: .7em;
+	}
+
+	.buscar-nav {
+		display: none;
+	}
+}
+
+
+#section1-inicio {
+	background-image: url("../imagenes/portadafoot.png");
+	background-color: gray;
+}
+
+#section1-inicio img {
+	display: none;
+	width: 100%;
+	margin: 20px 0;
+}
+
+#section1-inicio ul {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	list-style-type: none;
+	color: #e4dde5;
+	padding: 100px 0;
+	margin-top: 2em;
+}
+
+#section1-inicio ul li {
+	font-weight: 400;
+	font-size: 18px;
+	
+}
+
+/*ESTILO DE "NOVEDADES"*/
+
+#h1-novedades {
+	background: radial-gradient(circle,#11111f,#2d2d50);
+	color: #e4dde5;
+	padding: 10px 0 10px 30px;
+	margin:20px 0;
+	font-style: italic;
+}
+
+/*ESTILO DE "FAQS" Y "NOSOTROS*/
+
+.main-faqs-nosotros {
+	text-align: center;
+	padding-inline: 200px;
+}
+
+.main-faqs-nosotros h2 {
+	margin: 20px;
+	font-size: 30px;
+	border-block: 1px solid whitesmoke;
+}
+
+.main-faqs-nosotros div {
+	margin: 20px;	
+	padding-bottom: 20px;
+	border-bottom: 1px solid whitesmoke;
+}
+
+.main-faqs-nosotros strong {
+	display: inline-block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.main-faqs-nosotros p {
+	font-size: 18px;
+	font-weight: 400;
+	font-stretch: 10px;
+	line-height: 1.6;
+}
+
+/*ESTILO "CONTACTO"*/
+
+#main-contacto {
+	margin: 20px;
+	position: relative;
+}
+
+#main-contacto h2 {
+	font-size: 30px;
+	border-block: 1px solid whitesmoke;
+	margin-bottom: 20px;
+	padding-left: 30px;
+	text-align: center;
+}
+
+#main-contacto form {
+	display: inline-block;
+	margin-left: 30px;
+
+} 
+
+#main-contacto form p {
+	margin-block: 10px;
+	font-size: 20px;
+}
+
+#main-contacto input {
+	width: 250px;
+	height: 30px;
+	border-radius: 5px;
+	border:none;
+	border-bottom: 2px solid #11111f;
+}
+
+#main-contacto textarea {
+	width: 250px;
+	height: 150px;
+	border-radius: 5px;
+}
+
+#main-contacto div {
+	margin-block: 20px;
+	position: absolute;
+	right: 30px;
+	top: 37px;
+}
+
+#main-contacto div strong {
+	display: inline-block;
+	margin-block: 10px;
+	font-size: 20px;
+}
+
+#main-contacto iframe {
+	width: 400px;
+	height: 330px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+	background: linear-gradient(to bottom,transparent,#2d2d50);
+	border-top: 1px solid whitesmoke;
+	margin-top: 10px;
+}
+
+#foot-container {
+	position: relative;
+}
+
+.container-contactos {
+	display: inline-block;
+	margin: 30px;
+}
+
+.container-contactos ul{	
+	margin-top: 10px;
+}
+
+.container-medios-pago {
+	position: absolute;
+	display: inline-block;
+	text-align: center;
+	top: 30%;
+	left: 45%;
+}
+
+.container-medios-pago div {
+	margin-top: 10px;
+}
+
+.container-medios-pago img {
+	width: 25px;
+	height: 15px;
+}
+
+.foot-redes {
+	position: absolute;
+	display: inline-block;
+	top: 30px;
+	right: 50px;
+}
+
+.foot-redes li a {
+	font-size: 25px;
+	color: #000;
+}
