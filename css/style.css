@@ -38,6 +38,13 @@
 	padding: .4em .7em;
 }
 
+@media (max-width: 480px) {
+	.nav-ul {
+		flex-direction: column;
+		padding-left: 1em;
+	}
+}
+
 
 /*ESTILO DEL INICIO, PRODUCTOS*/
 
@@ -96,11 +103,11 @@
 
 	.main-productos {
 		grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-	 	grid-template-columns: repeat(auto-fill, minmax(150px, .6fr));		
+	 	grid-template-columns: repeat(auto-fill, minmax(125px, .7fr));		
 	}	
 
 	.main-productos p {
-		font-size: .7em;
+		font-size: .8em;
 	}
 
 	.buscar-nav {
