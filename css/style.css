@@ -6,6 +6,9 @@
 	list-style-type: none;
 	text-decoration: none;
 }
+body {
+	background-color: #e4dde5;
+}
 
 #header-nav {
 	background: radial-gradient(circle,#2d2d50,#11111f);
@@ -17,8 +20,7 @@
 }
 
 .nav-ul {
-	flex-direction: row;
-	justify-content: space-evenly;
+	padding-left: 1em;
 }
 
 .nav-ul li {
@@ -38,15 +40,9 @@
 	padding: .4em .7em;
 }
 
-@media (max-width: 480px) {
-	.nav-ul {
-		flex-direction: column;
-		padding-left: 1em;
-	}
-}
 
 
-/*ESTILO DEL INICIO, PRODUCTOS*/
+/*-------------------ESTILO DEL INICIO, PRODUCTOS----------------------*/
 
 #carrusel-portada {
 	margin: 1em 3em;
@@ -110,7 +106,45 @@
 }
 
 
+#section1-inicio {
+	background-image: url("../imagenes/portadafoot.png");
+	background-size: cover;
+	margin-block: 20px;
+	
+}
+
+#section1-inicio div {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+	text-align: center;
+	padding: 100px 0;
+}
+
+#section1-inicio ul {
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	color: #e4dde5;
+	
+}
+
+#section1-inicio ul li {
+	font-weight: 400;
+	font-size: 1.1em;
+	margin-inline: 2em;
+	text-align: center;
+}
+
+
 @media (max-width: 780px) {
+
+	#h1-ofertas {
+		font-size: calc(1rem + 1.5vw);
+	}
 
 	.main-productos {
 		grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
@@ -124,38 +158,22 @@
 	.buscar-nav {
 		display: none;
 	}
+
+	#section1-inicio div {
+		flex-direction: column;
+		padding: 70px 0;
+	}
+
+	#section1-inicio ul li {
+		font-size: .9em;
+	}
+
+	#section1-inicio ul:first-child {
+		margin-bottom: 50px;		
+	}
 }
 
-
-#section1-inicio {
-	background-image: url("../imagenes/portadafoot.png");
-	background-color: gray;
-}
-
-#section1-inicio img {
-	display: none;
-	width: 100%;
-	margin: 20px 0;
-}
-
-#section1-inicio ul {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-around;
-	list-style-type: none;
-	color: #e4dde5;
-	padding: 100px 0;
-	margin-top: 2em;
-}
-
-#section1-inicio ul li {
-	font-weight: 400;
-	font-size: 18px;
-	
-}
-
-/*ESTILO DE "NOVEDADES"*/
+/*--------------------ESTILO DE "NOVEDADES"-----------------*/
 
 #h1-novedades {
 	background: radial-gradient(circle,#11111f,#2d2d50);
@@ -165,7 +183,7 @@
 	font-style: italic;
 }
 
-/*ESTILO DE "FAQS" Y "NOSOTROS*/
+/*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
 
 .main-faqs-nosotros {
 	text-align: center;
@@ -197,7 +215,7 @@
 	line-height: 1.6;
 }
 
-/*ESTILO "CONTACTO"*/
+/*-------------ESTILO "CONTACTO"--------------*/
 
 #main-contacto {
 	margin: 20px;
@@ -257,6 +275,62 @@
 
 
 
+/*----------------Estilo del "Footer"----------------*/
+
+
+.foot-container {
+	display: flex;
+	justify-content: space-between;	
+	text-align: center;
+	background-color: #2d2d50;
+	color: #e4dde5;
+	font-weight: 300;
+	font-style:italic;
+}
+
+.foot-container div {
+	margin-inline: 2em;
+}
+
+.container-contactos ul, li {
+	margin: 5px 0;
+	padding: 0;
+	text-align: start;
+}
+
+.container-medios-pago img {
+	width: 25px;
+	height: 15px;
+}
+
+.container-medios-pago div, .foot-redes div {
+	margin: 0;
+}
+
+.foot-redes a {
+	margin: 10px;
+	font-size: 1.2em;
+	text-decoration: none;
+	color: #e4dde5;
+}
+
+@media (max-width: 780px) {
+	.foot-container {
+		font-size: .8em;
+	}
+}
+
+@media (max-width: 480px) {
+	.foot-container {
+		flex-direction: column;
+		align-items:flex-start;
+		text-align: left;
+	}
+
+	.foot-container div {
+		margin-block: .8em;
+	}
+}
 
 
 
@@ -267,11 +341,7 @@
 
 
 
-
-
-
-
-footer {
+/*footer {
 	background: linear-gradient(to bottom,transparent,#2d2d50);
 	border-top: 1px solid whitesmoke;
 	margin-top: 10px;
@@ -317,4 +387,4 @@ footer {
 .foot-redes li a {
 	font-size: 25px;
 	color: #000;
-}
+}*/

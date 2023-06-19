@@ -1,30 +1,56 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
-	<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<title>Look Style / Novedades</title>
-</head>
-<body>
-	<header id="header-nav">
-		<a href="../index.html"><img class="image-nav" src="../imagenes/marca.png" alt="logo-marca"></a>
-		<input class="buscar-nav" type="search" placeholder="   Buscar">
-		<nav>
-			<ul class="nav-ul">
-				<li><a href="../index.html">Inicio</a></li>
-				<li><a href="novedades.html">Novedades</a></li>
-				<li><a href="faqs.html">FAQS</a></li>
-				<li><a href="sobrenosotros.html">Sobre Nosotros</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
-			</ul>
-		</nav>
-	</header>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,400;1,500&display=swap"
+			rel="stylesheet">
+		<link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+		<link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<title>Look Style / Novedades</title>
+	</head>
+	
+	<body>
+		<header id="header-nav">
+			<nav class="navbar navbar-expand-md">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="../index.html">
+						<img class="image-nav" src="../imagenes/marca.png" alt="logo-marca">
+					</a>
+					<form class="buscar-nav" role="search">
+						<input type="search" placeholder="Search">
+					</form>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+						aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+						<span><img src="../imagenes/barras.png"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNav">
+						<ul class="navbar-nav ms-auto nav-ul">
+							<li class="nav-item">
+								<a class="nav-link" href="../index.html">Home</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="novedades.html">Novedades</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="faqs.html">FAQS</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="sobrenosotros.html">Nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="contacto.html">Contacto</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
 
 	<h1 id="h1-novedades">NOVEDADES</h1>
 	<main class="main-productos">
@@ -63,7 +89,7 @@
 	</main>
 
 	<footer>
-		<div id="foot-container">
+		<div class="foot-container">
 			<div class="container-contactos">
 				<strong>CONTACTANOS</strong>
 				<ul>
@@ -75,21 +101,31 @@
 			<div class="container-medios-pago">
 				<strong>MEDIOS DE PAGO</strong>
 				<div>
-					<img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png">
-					<img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png">
-					<img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png">
-					<img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png">
-					<img src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png">
+					<img
+						src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png">
+					<img
+						src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png">
+					<img
+						src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png">
+					<img
+						src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png">
+					<img
+						src="https://d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png">
 				</div>
 			</div>
 			<div class="foot-redes">
-				<ul>
-					<li><a href="https://www.facebook.com" target="blank"><i class="fi fi-brands-facebook"></i></a></li>
-					<li><a href="https://www.instagram.com" target="blank"><i class="fi fi-brands-instagram"></i></a></li>
-					<li><a href="https://www.whatsapp.com" target="blank"><i class="fi fi-brands-whatsapp"></i></a></li>
-				</ul>
+				<strong>NUESTRAS REDES</strong>
+				<div>
+					<a href="https://www.facebook.com" target="blank"><i class="fi fi-brands-facebook"></i></a>
+					<a href="https://www.instagram.com" target="blank"><i class="fi fi-brands-instagram"></i></a>
+					<a href="https://www.whatsapp.com" target="blank"><i class="fi fi-brands-whatsapp"></i></a></li>
+				</div>
 			</div>
 		</div>
 	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
 </body>
 </html>
