@@ -6,6 +6,7 @@
 	list-style-type: none;
 	text-decoration: none;
 }
+
 body {
 	background-color: #e4dde5;
 }
@@ -183,16 +184,25 @@ body {
 	font-style: italic;
 }
 
+@media (max-width: 780px) {
+
+	#h1-novedades {
+		font-size: calc(1rem + 1.5vw);
+	}
+}
+
 /*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
 
 .main-faqs-nosotros {
+	display: flex;
+	flex-direction: column;
 	text-align: center;
-	padding-inline: 200px;
+	padding-inline: 150px;
 }
 
 .main-faqs-nosotros h2 {
+	font-size: calc(1.3rem + 1.5vw);
 	margin: 20px;
-	font-size: 30px;
 	border-block: 1px solid whitesmoke;
 }
 
@@ -203,47 +213,72 @@ body {
 }
 
 .main-faqs-nosotros strong {
-	display: inline-block;
-	font-size: 20px;
+	font-size: 1.5em;
 	margin-bottom: 10px;
 }
 
 .main-faqs-nosotros p {
-	font-size: 18px;
+	font-size: 1.1em;
 	font-weight: 400;
 	font-stretch: 10px;
 	line-height: 1.6;
 }
 
+.body-nosotros-contacto {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+}
+
+@media (max-width: 780px) {
+	.main-faqs-nosotros {
+		padding-inline: 30px;
+	}
+
+	.main-faqs-nosotros h2 {
+		font-size: calc(1rem + 1.5vw);
+	}
+
+	.main-faqs-nosotros strong {
+		font-size: 1.1em;
+	}
+
+	.main-faqs-nosotros p {
+		font-size: .9em;
+	}
+}
+
 /*-------------ESTILO "CONTACTO"--------------*/
 
-#main-contacto {
-	margin: 20px;
-	position: relative;
+
+
+#main-contacto div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
 }
 
 #main-contacto h2 {
-	font-size: 30px;
+	font-size: calc(1.3rem + 1.5vw);
 	border-block: 1px solid whitesmoke;
-	margin-bottom: 20px;
-	padding-left: 30px;
+	margin: 20px;
 	text-align: center;
 }
 
-#main-contacto form {
-	display: inline-block;
-	margin-left: 30px;
-
+#main-contacto form, #main-contacto span {
+	margin: 0 2em 3em;
 } 
 
-#main-contacto form p {
+#main-contacto form p, #main-contacto span strong {
 	margin-block: 10px;
-	font-size: 20px;
+	font-size: 1.3em;
 }
 
 #main-contacto input {
 	width: 250px;
 	height: 30px;
+	padding-left: 10px;
 	border-radius: 5px;
 	border:none;
 	border-bottom: 2px solid #11111f;
@@ -255,28 +290,29 @@ body {
 	border-radius: 5px;
 }
 
-#main-contacto div {
-	margin-block: 20px;
-	position: absolute;
-	right: 30px;
-	top: 37px;
-}
-
-#main-contacto div strong {
-	display: inline-block;
-	margin-block: 10px;
-	font-size: 20px;
-}
-
 #main-contacto iframe {
-	width: 400px;
+	width: 100%;
 	height: 330px;
+}
+
+@media (max-width: 720px) {
+	#main-contacto div {
+		justify-content: flex-start;
+		align-items: start;
+	}
+
+	#main-contacto form p, #main-contacto span strong {
+		font-size: 1.1em;
+	}
 }
 
 
 
 /*----------------Estilo del "Footer"----------------*/
 
+footer {
+	margin-top: auto;
+}
 
 .foot-container {
 	display: flex;
@@ -286,6 +322,8 @@ body {
 	color: #e4dde5;
 	font-weight: 300;
 	font-style:italic;
+	margin-top: 2em;
+	padding-top: 1em;
 }
 
 .foot-container div {
@@ -331,60 +369,3 @@ body {
 		margin-block: .8em;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-/*footer {
-	background: linear-gradient(to bottom,transparent,#2d2d50);
-	border-top: 1px solid whitesmoke;
-	margin-top: 10px;
-}
-
-#foot-container {
-	position: relative;
-}
-
-.container-contactos {
-	display: inline-block;
-	margin: 30px;
-}
-
-.container-contactos ul{	
-	margin-top: 10px;
-}
-
-.container-medios-pago {
-	position: absolute;
-	display: inline-block;
-	text-align: center;
-	top: 30%;
-	left: 45%;
-}
-
-.container-medios-pago div {
-	margin-top: 10px;
-}
-
-.container-medios-pago img {
-	width: 25px;
-	height: 15px;
-}
-
-.foot-redes {
-	position: absolute;
-	display: inline-block;
-	top: 30px;
-	right: 50px;
-}
-
-.foot-redes li a {
-	font-size: 25px;
-	color: #000;
-}*/
