@@ -143,8 +143,13 @@ body {
 
 @media (max-width: 780px) {
 
+	#carrusel-portada {
+		display: none;
+	}
+
 	#h1-ofertas {
 		font-size: calc(1rem + 1.5vw);
+		margin-top: 20px;
 	}
 
 	.main-productos {
