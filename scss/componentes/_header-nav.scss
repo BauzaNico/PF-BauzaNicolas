@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Fira Sans', sans-serif;
+	list-style-type: none;
+	text-decoration: none;
+}
+
+#header-nav {
+    background: map-get($clrs-ppl, bg-1);
+    li {
+        margin: 0 .5em;
+        a{
+            color: map-get($clrs-ppl, clr-1 );
+            font-size: 1em;
+            &:hover {
+                color: map-get($clrs-ppl, clr-4 );
+            }    
+        }
+    }
+}
+
+.nav-ul {
+    padding-left: 1em;
+}
+
+.buscar-nav {
+    input {
+        width: 100%;
+	    background-color: map-get($clrs-ppl, clr-1 );
+	    border: none;
+	    border-radius: 12px;
+	    padding: .4em .7em;
+    }
+    
+}
+
+.image-nav {
+	height: 2em;
+	margin: 0 1em;
+}

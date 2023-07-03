@@ -1,376 +1,117 @@
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Fira Sans', sans-serif;
-	list-style-type: none;
-	text-decoration: none;
-}
-
-body {
-	background-color: #e4dde5;
-}
-
-#header-nav {
-	background: radial-gradient(circle,#2d2d50,#11111f);
-}
-
-#header-nav li a {
-	color: #e4dde5;
-	font-size: 1em;
-}
-
-.nav-ul {
-	padding-left: 1em;
-}
-
-.nav-ul li {
-	margin: 0 .5em;
-}
-
-.image-nav {
-	height: 2em;
-	margin: 0 1em;
-}
-
-.buscar-nav input {
-	width: 100%;
-	background-color: #e4dde5;
-	border: none;
-	border-radius: 12px;
-	padding: .4em .7em;
-}
-
-
-
-/*-------------------ESTILO DEL INICIO, PRODUCTOS----------------------*/
-
-#carrusel-portada {
-	margin: 1em 3em;
-}
-
-#carrusel-portada button {
-	height: 10px;
-	width: 10px;
-	border-radius: 50%;
-	margin: 0 5px;
-	background-color: #e4dde5;
-}
-
-#carrusel-portada .active {
-	background-color: #11111f;
-}
-
-#h1-ofertas {
-	background: radial-gradient(circle,#2d2d50,#11111f);
-	color: #e4dde5;
-	padding: 10px 0 10px 30px;
-	margin-bottom: 0.5em;
-	font-style: italic;
+/*h1 {
+    @include titulo(italic, map-get($clrs-ppl, bg-1), map-get($clrs-ppl, clr-1), 10px 0 10px 30px, 20px 0)
+}*/
+.main-productos div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
 }
 
 .main-productos {
-	display: grid;
-	grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-	grid-template-columns: repeat(auto-fill, minmax(200px, .5fr));
-	grid-gap: 3em;
-	justify-items: center;
-	align-items: center;
-	justify-content: center;
-	padding: 1em 2em 2em;
-
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
 }
 
+/*h2 {
+    @extend %sub-titulo;
+}*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#header-nav {
+  background: radial-gradient(circle, #2d2d50, #11111f);
+}
+#header-nav li {
+  margin: 0 0.5em;
+}
+#header-nav li a {
+  color: #e4dde5;
+  font-size: 1em;
+}
+#header-nav li a:hover {
+  color: #c42fe9;
+}
+
+.nav-ul {
+  padding-left: 1em;
+}
+
+.buscar-nav input {
+  width: 100%;
+  background-color: #e4dde5;
+  border: none;
+  border-radius: 12px;
+  padding: 0.4em 0.7em;
+}
+
+.image-nav {
+  height: 2em;
+  margin: 0 1em;
+}
+
+#carrusel-portada {
+  margin: 1em 3em;
+}
+#carrusel-portada button {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #e4dde5;
+}
+#carrusel-portada .active {
+  background-color: #11111f;
+}
+
+#h1-ofertas {
+  font-style: italic;
+  background: radial-gradient(circle, #2d2d50, #11111f);
+  color: #e4dde5;
+  padding: 10px 0 10px 30px;
+  margin: 20px 0;
+}
+
+.main-productos {
+  grid-gap: 3em;
+  padding: 1em 2em 2em;
+  grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
+}
 .main-productos div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;	
-	width: 100%;
-	height: 100%;
-	padding: 10px;	
-	background: linear-gradient(to bottom,#2d2d50,transparent);
-	border-radius: 12px;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  border: solid 1px #e4dde5;
+  border-radius: 10px;
 }
-
+.main-productos div:hover {
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
 .main-productos img {
-	border-radius: 12px;	
-	object-fit: cover;
-	width: 100%;
-	height: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 85%;
 }
-
 .main-productos p {
-	padding-top: 10px;
-	font-size: 1em;
-	font-weight: 400;
-	text-align: center;	
+  border-top: solid 1px #e4dde5;
+  margin-top: 10px;
+  padding-top: 5px;
+  font-size: 1em;
+  font-weight: 400;
 }
 
-
-#section1-inicio {
-	background-image: url("../imagenes/portadafoot.png");
-	background-size: cover;
-	margin-block: 20px;
-	
-}
-
-#section1-inicio div {
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: center;
-	text-align: center;
-	padding: 100px 0;
-}
-
-#section1-inicio ul {
-	display: flex;
-	justify-content: space-evenly;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	color: #e4dde5;
-	
-}
-
-#section1-inicio ul li {
-	font-weight: 400;
-	font-size: 1.1em;
-	margin-inline: 2em;
-	text-align: center;
-}
-
-
-@media (max-width: 780px) {
-
-	#carrusel-portada {
-		display: none;
-	}
-
-	#h1-ofertas {
-		font-size: calc(1rem + 1.5vw);
-		margin-top: 20px;
-	}
-
-	.main-productos {
-		grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
-	 	grid-template-columns: repeat(auto-fill, minmax(125px, .7fr));		
-	}	
-
-	.main-productos p {
-		font-size: .8em;
-	}
-
-	.buscar-nav {
-		display: none;
-	}
-
-	#section1-inicio div {
-		flex-direction: column;
-		padding: 70px 0;
-	}
-
-	#section1-inicio ul li {
-		font-size: .9em;
-	}
-
-	#section1-inicio ul:first-child {
-		margin-bottom: 50px;		
-	}
-}
-
-/*--------------------ESTILO DE "NOVEDADES"-----------------*/
-
-#h1-novedades {
-	background: radial-gradient(circle,#11111f,#2d2d50);
-	color: #e4dde5;
-	padding: 10px 0 10px 30px;
-	margin:20px 0;
-	font-style: italic;
-}
-
-@media (max-width: 780px) {
-
-	#h1-novedades {
-		font-size: calc(1rem + 1.5vw);
-	}
-}
-
-/*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
-
-.main-faqs-nosotros {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-	padding-inline: 150px;
-}
-
-.main-faqs-nosotros h2 {
-	font-size: calc(1.3rem + 1.5vw);
-	margin: 20px;
-	border-block: 1px solid whitesmoke;
-}
-
-.main-faqs-nosotros div {
-	margin: 20px;	
-	padding-bottom: 20px;
-	border-bottom: 1px solid whitesmoke;
-}
-
-.main-faqs-nosotros strong {
-	font-size: 1.5em;
-	margin-bottom: 10px;
-}
-
-.main-faqs-nosotros p {
-	font-size: 1.1em;
-	font-weight: 400;
-	font-stretch: 10px;
-	line-height: 1.6;
-}
-
-.body-nosotros-contacto {
-	display: flex;
-	flex-direction: column;
-	height: 100vh;
-}
-
-@media (max-width: 780px) {
-	.main-faqs-nosotros {
-		padding-inline: 30px;
-	}
-
-	.main-faqs-nosotros h2 {
-		font-size: calc(1rem + 1.5vw);
-	}
-
-	.main-faqs-nosotros strong {
-		font-size: 1.1em;
-	}
-
-	.main-faqs-nosotros p {
-		font-size: .9em;
-	}
-}
-
-/*-------------ESTILO "CONTACTO"--------------*/
-
-
-
-#main-contacto div {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-}
-
-#main-contacto h2 {
-	font-size: calc(1.3rem + 1.5vw);
-	border-block: 1px solid whitesmoke;
-	margin: 20px;
-	text-align: center;
-}
-
-#main-contacto form, #main-contacto span {
-	margin: 0 2em 3em;
-} 
-
-#main-contacto form p, #main-contacto span strong {
-	margin-block: 10px;
-	font-size: 1.3em;
-}
-
-#main-contacto input {
-	width: 250px;
-	height: 30px;
-	padding-left: 10px;
-	border-radius: 5px;
-	border:none;
-	border-bottom: 2px solid #11111f;
-}
-
-#main-contacto textarea {
-	width: 250px;
-	height: 150px;
-	border-radius: 5px;
-}
-
-#main-contacto iframe {
-	width: 100%;
-	height: 330px;
-}
-
-@media (max-width: 720px) {
-	#main-contacto div {
-		justify-content: flex-start;
-		align-items: start;
-	}
-
-	#main-contacto form p, #main-contacto span strong {
-		font-size: 1.1em;
-	}
-}
-
-
-
-/*----------------Estilo del "Footer"----------------*/
-
-footer {
-	margin-top: auto;
-}
-
-.foot-container {
-	display: flex;
-	justify-content: space-between;	
-	text-align: center;
-	background-color: #2d2d50;
-	color: #e4dde5;
-	font-weight: 300;
-	font-style:italic;
-	margin-top: 2em;
-	padding-top: 1em;
-}
-
-.foot-container div {
-	margin-inline: 2em;
-}
-
-.container-contactos ul, li {
-	margin: 5px 0;
-	padding: 0;
-	text-align: start;
-}
-
-.container-medios-pago img {
-	width: 25px;
-	height: 15px;
-}
-
-.container-medios-pago div, .foot-redes div {
-	margin: 0;
-}
-
-.foot-redes a {
-	margin: 10px;
-	font-size: 1.2em;
-	text-decoration: none;
-	color: #e4dde5;
-}
-
-@media (max-width: 780px) {
-	.foot-container {
-		font-size: .8em;
-	}
-}
-
-@media (max-width: 480px) {
-	.foot-container {
-		flex-direction: column;
-		align-items:flex-start;
-		text-align: left;
-	}
-
-	.foot-container div {
-		margin-block: .8em;
-	}
-}
+/*# sourceMappingURL=style.css.map */

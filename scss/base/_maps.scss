@@ -1,0 +1,15 @@
+$clrs-ppl:(
+    clr-1:#e4dde5,
+    clr-2:#11111f,
+    clr-3:#2d2d50,
+    clr-4:#c42fe9,
+    clr-5: whitesmoke,
+    bg-1: radial-gradient(circle,#2d2d50,#11111f),
+    bg-2: linear-gradient(to top,#ffffff, whitesmoke ,#e4dde5),
+);
+
+$grd-tpl: (
+    tpl-r1: repeat(auto-fill, minmax(100px, 1fr)),
+    tpl-c1: repeat(auto-fill, minmax(200px, .5fr)),
+    tpl-c2: repeat(auto-fill, minmax(125px, .7fr))
+);
