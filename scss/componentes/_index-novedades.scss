@@ -1,0 +1,91 @@
+
+             /*----------CARRUSEL--------*/
+#carrusel-portada {
+    margin: 16px 50px; 
+    button {
+        height: 10px;
+	    width: 10px;
+	    border-radius: 50%;
+	    margin: 0 5px;
+	    background-color: nth($clrs, 1 );
+    }
+    .active {
+        background-color: nth($clrs, 2 );
+    }
+}
+
+            /*----------TITULOS--------*/
+
+#h1-ofertas, #h1-novedades {
+    @include titulo(italic, map-get($bdr-ppl, bg-1), nth($clrs, 1), 10px 0 10px 30px, 20px 0)
+}
+            /*----------MAIN, GALERIA--------*/
+
+.main-productos {
+    @extend %grid-center;
+    grid-gap: 3em;
+    padding: 15px 30px 30px;
+    grid-template-rows: map-get($grd-tpl, tpl-r1 );
+    grid-template-columns: map-get($grd-tpl, tpl-c1 );
+    
+    div {
+        @extend %flex-center;
+        flex-wrap: wrap;
+        width: 100%;
+	    height: 100%;
+	    padding: 10px;
+        border: solid 1px nth($clrs, 1 );
+        border-radius: 10px;        
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all .5s;
+        }
+    }
+
+    img {
+        border-radius: 10px;	
+	    object-fit: cover;
+	    width: 100%;
+	    height: 85%;       
+    }
+
+    p {
+        border-top: solid 1px nth($clrs, 1);
+        margin-top: 10px;
+        padding-top: 5px;
+	    font-size: $ft-sz1;
+	    font-weight: 400;
+    }
+}
+
+            /*----------SECTION--------*/
+
+#section1-inicio {
+    background-image: url("../imagenes/portadafoot.png");
+	background-size: cover;
+	margin-block: map-get($bdr-ppl, mg-pd );
+
+    div {
+        @extend %flex-center;
+        flex-wrap: nowrap;
+        padding: 100px 0;
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            color: nth($clrs , 1 );
+    
+            li {
+                font-weight: 400;
+                font-size: $ft-sz2;
+                margin-inline: 40px;
+                text-align: center;
+            }
+        }
+    }
+}    

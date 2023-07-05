@@ -1,9 +1,8 @@
+@import './base/vars';
+@import './base/list';
 @import './base/maps';
 @import './base/mixin';
 @import './base/extend';
 
 @import './componentes/header-nav';
-@import './componentes/carrusel';
-@import './componentes/home-productos';
-
-
+@import'./componentes/index-novedades';

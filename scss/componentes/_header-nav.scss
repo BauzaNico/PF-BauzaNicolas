@@ -2,41 +2,41 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Fira Sans', sans-serif;
+	font-family: $font-fam;
 	list-style-type: none;
 	text-decoration: none;
 }
 
 #header-nav {
-    background: map-get($clrs-ppl, bg-1);
+    background: map-get($bdr-ppl, bg-1);
     li {
-        margin: 0 .5em;
+        margin: 0 8px;
         a{
-            color: map-get($clrs-ppl, clr-1 );
-            font-size: 1em;
+            color: nth($clrs, 1 );
+            font-size: $ft-sz1;
             &:hover {
-                color: map-get($clrs-ppl, clr-4 );
+                color: nth($clrs, 4 );
             }    
         }
     }
 }
 
 .nav-ul {
-    padding-left: 1em;
+    padding-left: 16px;
 }
 
 .buscar-nav {
     input {
         width: 100%;
-	    background-color: map-get($clrs-ppl, clr-1 );
+	    background-color: nth($clrs, 1 );
 	    border: none;
 	    border-radius: 12px;
-	    padding: .4em .7em;
+	    padding: 6px 15px;
     }
     
 }
 
 .image-nav {
-	height: 2em;
+	height: 40px;
 	margin: 0 1em;
 }

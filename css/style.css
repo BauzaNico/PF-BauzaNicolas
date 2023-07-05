@@ -1,7 +1,4 @@
-/*h1 {
-    @include titulo(italic, map-get($clrs-ppl, bg-1), map-get($clrs-ppl, clr-1), 10px 0 10px 30px, 20px 0)
-}*/
-.main-productos div {
+#section1-inicio div, .main-productos div {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,9 +14,6 @@
   text-align: center;
 }
 
-/*h2 {
-    @extend %sub-titulo;
-}*/
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +27,7 @@
   background: radial-gradient(circle, #2d2d50, #11111f);
 }
 #header-nav li {
-  margin: 0 0.5em;
+  margin: 0 8px;
 }
 #header-nav li a {
   color: #e4dde5;
@@ -44,7 +38,7 @@
 }
 
 .nav-ul {
-  padding-left: 1em;
+  padding-left: 16px;
 }
 
 .buscar-nav input {
@@ -52,16 +46,17 @@
   background-color: #e4dde5;
   border: none;
   border-radius: 12px;
-  padding: 0.4em 0.7em;
+  padding: 6px 15px;
 }
 
 .image-nav {
-  height: 2em;
+  height: 40px;
   margin: 0 1em;
 }
 
+/*----------CARRUSEL--------*/
 #carrusel-portada {
-  margin: 1em 3em;
+  margin: 16px 50px;
 }
 #carrusel-portada button {
   height: 10px;
@@ -74,7 +69,8 @@
   background-color: #11111f;
 }
 
-#h1-ofertas {
+/*----------TITULOS--------*/
+#h1-ofertas, #h1-novedades {
   font-style: italic;
   background: radial-gradient(circle, #2d2d50, #11111f);
   color: #e4dde5;
@@ -82,9 +78,10 @@
   margin: 20px 0;
 }
 
+/*----------MAIN, GALERIA--------*/
 .main-productos {
   grid-gap: 3em;
-  padding: 1em 2em 2em;
+  padding: 15px 30px 30px;
   grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(200px, 0.5fr));
 }
@@ -112,6 +109,32 @@
   padding-top: 5px;
   font-size: 1em;
   font-weight: 400;
+}
+
+/*----------SECTION--------*/
+#section1-inicio {
+  background-image: url("../imagenes/portadafoot.png");
+  background-size: cover;
+  margin-block: 20px;
+}
+#section1-inicio div {
+  flex-wrap: nowrap;
+  padding: 100px 0;
+}
+#section1-inicio div ul {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  color: #e4dde5;
+}
+#section1-inicio div ul li {
+  font-weight: 400;
+  font-size: 1.1em;
+  margin-inline: 40px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
