@@ -69,6 +69,11 @@
   background-color: #11111f;
 }
 
+@media (max-width: 780px) {
+  #carrusel-portada {
+    display: none;
+  }
+}
 /*----------TITULOS--------*/
 #h1-ofertas, #h1-novedades {
   font-style: italic;
@@ -78,6 +83,12 @@
   margin: 20px 0;
 }
 
+@media (max-width: 780px) {
+  #h1-ofertas {
+    font-size: calc(1em + 1.5vw);
+    margin-top: 20px;
+  }
+}
 /*----------MAIN, GALERIA--------*/
 .main-productos {
   grid-gap: 3em;
@@ -95,7 +106,8 @@
 }
 .main-productos div:hover {
   transform: scale(1.02);
-  transition: all 0.5s;
+  transition: all 0.3s;
+  box-shadow: 1px 2px 7px 0 lightgrey;
 }
 .main-productos img {
   border-radius: 10px;
@@ -111,6 +123,15 @@
   font-weight: 400;
 }
 
+@media (max-width: 780px) {
+  .main-productos {
+    grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(125px, 0.7fr));
+  }
+  .main-productos p {
+    font-size: 0.8em;
+  }
+}
 /*----------SECTION--------*/
 #section1-inicio {
   background-image: url("../imagenes/portadafoot.png");
@@ -135,6 +156,117 @@
   font-size: 1.1em;
   margin-inline: 40px;
   text-align: center;
+}
+
+@media (max-width: 780px) {
+  #section1-inicio div {
+    flex-direction: column;
+    padding: 70px 0;
+  }
+  #section1-inicio div ul:first-child {
+    margin-bottom: 50px;
+  }
+  #section1-inicio div li {
+    font-size: 0.8em;
+  }
+}
+/*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
+.body-nosotros-contacto {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #e4dde5;
+}
+
+.main-faqs-nosotros {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-inline: 150px;
+}
+.main-faqs-nosotros h2 {
+  font-size: calc(1.3em + 1.5vw);
+  margin: 20px;
+  border-block: 1px solid whitesmoke;
+}
+.main-faqs-nosotros div {
+  margin: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid whitesmoke;
+}
+.main-faqs-nosotros div strong {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+.main-faqs-nosotros p {
+  font-size: 1.1em;
+  font-weight: 400;
+  font-stretch: 10px;
+  line-height: 1.6;
+}
+
+@media (max-width: 780px) {
+  .main-faqs-nosotros {
+    padding-inline: 30px;
+  }
+  .main-faqs-nosotros h2 {
+    font-size: calc(1em + 1.5vw);
+  }
+  .main-faqs-nosotros strong {
+    font-size: 1.1em;
+  }
+  .main-faqs-nosotros p {
+    font-size: 0.8em;
+  }
+}
+/*-------------ESTILO "CONTACTO"--------------*/
+#main-contacto h2 {
+  font-size: calc(1.3em + 1.5vw);
+  border-block: 1px solid whitesmoke;
+  margin: 20px;
+  text-align: center;
+}
+#main-contacto div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+#main-contacto form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 40px 60px;
+}
+#main-contacto form label {
+  margin-block: 10px;
+  font-size: 1.3em;
+}
+#main-contacto form input {
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: none;
+}
+#main-contacto form textarea {
+  width: 250px;
+  height: 150px;
+  border-radius: 5px;
+}
+#main-contacto .boton-enviar {
+  padding: 0;
+  border-bottom: 2px solid #2d2d50;
+}
+#main-contacto span {
+  margin: 0 40px 60px;
+}
+#main-contacto span strong {
+  margin-block: 10px;
+  font-size: 1.3em;
+}
+#main-contacto iframe {
+  width: 100%;
+  height: 330px;
 }
 
 /*# sourceMappingURL=style.css.map */

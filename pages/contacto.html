@@ -55,19 +55,19 @@
 	<main id="main-contacto">
 		<h2>CONTACTO</h2>
 		<div>
-			<form>
-				<p><b>Nombre y Apellido</b></p>
-				<input type="text" required placeholder="Nombre y Apellido">
+			<form action="document-contact.php" method="get">
+				<label for="nombre" name="nombre"><b>Nombre y Apellido</b></label>
+				<input type="text" required name="nombre" placeholder="Nombre y Apellido">
 	
-				<p><b>Mail</b></p>
-				<input type="mail" required placeholder="example@gmail.com">		
+				<label for="mail" name="mail"><b>Mail</b></label>
+				<input type="mail" required name="mail" placeholder="example@gmail.com">		
 	
-				<p><b>Asunto</b></p>
-				<input type="text" required placeholder="Asunto">
+				<label for="asunto" name="asunto"><b>Asunto</b></label>
+				<input type="text" required name="asunto" placeholder="Compra, devolución, etc..">
 	
-				<p><b>Mensaje</b></p>
-				<textarea required></textarea><br>
-				<input class="boton-enviar" type="submit">				
+				<label for="mensaje" name="mensaje" ><b>Mensaje</b></label>
+				<textarea name="mensaje"></textarea><br>
+				<input class="boton-enviar" type="submit" value="enviar">				
 			</form>
 	
 			<span>

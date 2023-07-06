@@ -1,0 +1,116 @@
+/*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
+.body-nosotros-contacto {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+    background-color: nth($clrs , 1 );
+}
+
+.main-faqs-nosotros {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-inline: 150px;
+
+    h2 {
+        font-size: $ft-sz-calc2;
+	    margin: map-get($bdr-ppl, mg-pd );
+	    border-block: map-get($bdr-ppl, bdr-blk );
+    }
+
+    div {
+        margin: map-get($bdr-ppl, mg-pd );
+	    padding-bottom: map-get($bdr-ppl, mg-pd );
+	    border-bottom: map-get($bdr-ppl, bdr-blk );
+
+        strong {
+            font-size: $ft-sz3;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        font-size: $ft-sz2;
+        font-weight: 400;
+        font-stretch: 10px;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .main-faqs-nosotros {
+		padding-inline: 30px;
+
+        h2 {
+            font-size: $ft-sz-calc1;
+        }
+        strong {
+            font-size: $ft-sz2;
+        }
+        p {
+            font-size: $ft-sz-med;
+        }
+	}
+}
+
+/*-------------ESTILO "CONTACTO"--------------*/
+#main-contacto {
+    h2 {
+        font-size: $ft-sz-calc2;
+        border-block: map-get($bdr-ppl, bdr-blk );
+	    margin: map-get($bdr-ppl, mg-pd );
+	    text-align: center;
+    }
+
+    div {
+        display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-around;
+	    align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        margin: 0 40px 60px;
+
+        label {
+            margin-block: 10px;
+	        font-size: 1.3em;
+        }
+        input {
+            width: 250px;
+	        height: 30px;
+	        padding-left: 10px;
+	        border-radius: 5px;
+	        border:none;
+	        
+        }
+        textarea {
+            width: 250px;
+	        height: 150px;
+	        border-radius: 5px;
+        }
+    }
+
+    .boton-enviar {
+        padding: 0;
+        border-bottom: 2px solid nth($clrs, 3 );
+    }
+
+    span {
+        margin: 0 40px 60px;
+
+        strong {
+            margin-block: 10px;
+	        font-size: 1.3em;
+        }
+    }
+
+    iframe {
+        width: 100%;
+	    height: 330px;
+    }
+}
+
