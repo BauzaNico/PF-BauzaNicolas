@@ -170,7 +170,7 @@
     font-size: 0.8em;
   }
 }
-/*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
+/*--------------ESTILO DE "FAQS" Y "NOSOTROS"--------------*/
 .body-nosotros-contacto {
   display: flex;
   flex-direction: column;
@@ -267,6 +267,70 @@
 #main-contacto iframe {
   width: 100%;
   height: 330px;
+}
+
+@media (max-width: 720px) {
+  #main-contacto div {
+    justify-content: flex-start;
+    align-items: start;
+  }
+  #main-contacto div label, #main-contacto div p, #main-contacto div strong {
+    font-size: 1.1em;
+  }
+}
+/*----------------Estilo del "Footer"----------------*/
+footer {
+  margin-top: auto;
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  background-color: #2d2d50;
+  color: #e4dde5;
+  font-weight: 300;
+  font-style: italic;
+  margin-top: 40px;
+  padding-top: 20px;
+}
+.foot-container div {
+  margin-inline: 40px;
+}
+.foot-container div li {
+  margin: 5px 0;
+  padding: 0;
+  text-align: start;
+}
+
+.container-medios-pago div {
+  margin: 0;
+}
+.container-medios-pago div img {
+  width: 25px;
+  height: 15px;
+}
+
+.foot-redes div {
+  margin: 0;
+}
+.foot-redes div a {
+  margin: 12px;
+  font-size: 1.2em;
+  text-decoration: none;
+  color: #e4dde5;
+}
+
+@media (max-width: 576px) {
+  .foot-container {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 0.8em;
+  }
+  .foot-container div {
+    margin-block: 0.8em;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

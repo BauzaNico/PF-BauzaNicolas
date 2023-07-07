@@ -1,0 +1,60 @@
+/*----------------Estilo del "Footer"----------------*/
+footer {
+    margin-top: auto;
+}
+
+.foot-container {
+	display: flex;
+	justify-content: space-between;	
+	text-align: center;
+	background-color: nth($clrs , 3 );
+	color:  nth($clrs , 1 );
+	font-weight: 300;
+	font-style:italic;
+	margin-top: 40px;
+	padding-top: 20px;
+
+    div {
+        margin-inline: 40px;
+        li {
+            margin: 5px 0;
+	        padding: 0;
+	        text-align: start;
+        }
+    }
+}
+
+.container-medios-pago {
+    div {
+        margin: 0;
+        img {
+            width: 25px;
+            height: 15px;
+        }
+    }
+}
+
+.foot-redes {
+    div {
+        margin: 0;
+        a {
+            margin: 12px;
+        	font-size: 1.2em;
+	        text-decoration: none;
+	        color: nth($clrs, 1 );
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .foot-container {
+        flex-direction: column;
+		align-items:flex-start;
+		text-align: left;
+		font-size: $ft-sz-med;
+        div {
+            margin-block: .8em;
+        }
+	}
+}

@@ -1,4 +1,4 @@
-/*--------------ESTILO DE "FAQS" Y "NOSOTROS--------------*/
+/*--------------ESTILO DE "FAQS" Y "NOSOTROS"--------------*/
 .body-nosotros-contacto {
 	display: flex;
 	flex-direction: column;
@@ -114,3 +114,15 @@
     }
 }
 
+@media (max-width: 720px) {
+    #main-contacto {
+        div {
+            justify-content: flex-start;
+		    align-items: start;
+            
+            label, p, strong {
+                font-size: $ft-sz2;
+            }
+        }
+    }
+}
