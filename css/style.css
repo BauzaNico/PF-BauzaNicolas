@@ -198,6 +198,9 @@
   font-size: 1.5em;
   margin-bottom: 10px;
 }
+.main-faqs-nosotros div img {
+  width: 100%;
+}
 .main-faqs-nosotros p {
   font-size: 1.1em;
   font-weight: 400;
